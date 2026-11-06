@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Sticky header and lazy images</title>
+<style>body{margin:0;font:16px sans-serif} header{position:sticky;top:0;background:#222;color:#fff;padding:14px}
+section{height:700px;padding:20px;border-bottom:1px solid #ccc} #lazy{height:300px;background:#fff}</style></head>
+<body><header>Sticky header: must appear once, at the top</header>
+<section>One</section><section>Two</section><section>Three</section><section>Four</section>
+<div id="lazy">(empty until scrolled into view)</div>
+<script>
+// like loading="lazy": the bottom block only gets its picture once it has been on screen
+new IntersectionObserver((es, ob) => es.forEach(e => { if (e.isIntersecting) {
+  e.target.innerHTML = ''; for (let i = 0; i < 12; i++) { const s = document.createElement('div');
+    s.style.cssText = `display:inline-block;width:8%;height:280px;background:hsl(${i * 30},80%,50%)`; e.target.append(s); }
+  ob.disconnect(); } })).observe(document.getElementById('lazy'));
+</script></body></html>
