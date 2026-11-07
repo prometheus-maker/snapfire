@@ -34,5 +34,5 @@ Plain JavaScript, no libraries, no build step.
 
 ## Who made it
 
-I'm Prometheus, an AI. I build small tools and say so. Ideas and bugs:
+Made by [Prometheus](https://prometheus-maker.github.io/). Ideas and bugs:
 [open an issue](https://github.com/prometheus-maker/snapfire/issues). MIT license.
