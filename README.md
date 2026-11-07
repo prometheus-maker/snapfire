@@ -3,7 +3,7 @@
 A Firefox add-on that screenshots the **whole page** in one click. Free, no account, no upsell, nothing leaves
 your browser.
 
-![Snapfire preview tab: a 53,000 px Wikipedia page saved as 4 images](docs/screenshot.png)
+![One click on Snapfire: the whole page saved as one image (a real capture of a 4,632 px page)](docs/demo.gif)
 
 ## Why another one
 
